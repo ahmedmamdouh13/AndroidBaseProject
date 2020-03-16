@@ -1,2 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ahmedmamdouh13.data" />
+    package="com.ahmedmamdouh13.data" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

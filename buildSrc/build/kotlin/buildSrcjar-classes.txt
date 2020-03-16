@@ -1,0 +1,1 @@
+/home/ahmedmamdouh13/SilverBullet/buildSrc/build/classes/kotlin/main/Dependencies.class:/home/ahmedmamdouh13/SilverBullet/buildSrc/build/classes/kotlin/main/Versions.class
