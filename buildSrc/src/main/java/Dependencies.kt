@@ -1,6 +1,13 @@
+import Versions.android_ktx_version
+import Versions.appcompat_version
+import Versions.arch_test_version
+import Versions.constraintlayout_version
 import Versions.coroutines_version
+import Versions.espresso_version
+import Versions.junit_android_version
 import Versions.junit_version
 import Versions.koin_version
+import Versions.kotlin_version
 import Versions.lifecycle_version
 import Versions.mockk_version
 import Versions.moshi_version
@@ -9,6 +16,9 @@ import Versions.retrofit_version
 import Versions.room_version
 
 object Versions {
+    const val kotlin_version = "1.3.70"
+    const val appcompat_version = "1.1.0"
+    const val android_ktx_version = "1.2.0"
     const val koin_version = "2.1.4"
     const val coroutines_version = "1.3.4"
     const val lifecycle_version = "2.2.0"
@@ -18,10 +28,27 @@ object Versions {
     const val room_version = "2.2.4"
     const val mockk_version = "1.9.3"
     const val junit_version = "4.13"
+    const val junit_android_version = "1.1.1"
+    const val arch_test_version = "1.1.1"
+    const val espresso_version = "3.2.0"
+    const val constraintlayout_version = "1.1.3"
+
 
 }
 
 object Dependencies {
+    //kotlinlib
+    val kotlinLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //appcompat
+    val appcompat = "androidx.appcompat:appcompat:$appcompat_version"
+
+    //constrainlayout
+    val constraintLayout = "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+
+    //androidktx
+    val androidKtxCore = "androidx.core:core-ktx:$android_ktx_version"
+
     //lifecycle
     val lifecycleAnnotations = "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
     val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
@@ -55,6 +82,13 @@ object Dependencies {
 
     //junit
     val junit = "junit:junit:$junit_version"
+    val junitAndroid = "androidx.test.ext:junit:$junit_android_version"
+
+    //architecture core test
+    val archTest = "android.arch.core:core-testing:$arch_test_version"
+
+    //espresso
+    val espresso = "androidx.test.espresso:espresso-core:$espresso_version"
 
     //coroutines
     val coroutinesTestRule = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"

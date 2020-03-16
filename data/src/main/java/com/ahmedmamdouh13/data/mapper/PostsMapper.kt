@@ -1,7 +1,7 @@
 package com.ahmedmamdouh13.data.mapper
 
 import com.ahmedmamdouh13.data.remote.RedditResponse
-import com.ahmedmamdouh13.domain.PostDomain
+import com.ahmedmamdouh13.domain.model.PostDomain
 
 class PostsMapper {
     fun mapFromResonseToDomain(response: RedditResponse): List<PostDomain>? {

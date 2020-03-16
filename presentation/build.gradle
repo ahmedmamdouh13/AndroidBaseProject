@@ -32,9 +32,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.2.0'
+    //kotlin
+    implementation Dependencies.kotlinLib
+    //appcompat
+    implementation Dependencies.appcompat
+
+    //androidktx
+    implementation Dependencies.androidKtxCore
 
     //koin
     implementation Dependencies.koinViewModel
@@ -53,7 +57,7 @@ dependencies {
     implementation Dependencies.retrofitMoshiConverter
     implementation Dependencies.retrofitCoroutines
 
-    //testing
+    //unit test
     //junit
     testImplementation Dependencies.junit
     //mockk
@@ -61,10 +65,15 @@ dependencies {
     testImplementation Dependencies.mockKAndroid
     //coroutinestest
     testImplementation Dependencies.coroutinesTestRule
+    //junit
+    testImplementation Dependencies.junit
 
-    testImplementation  'android.arch.core:core-testing:1.1.1'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //architecture comp test
+    testImplementation Dependencies.archTest
+
+    //android test
+    androidTestImplementation Dependencies.junitAndroid
+    androidTestImplementation Dependencies.espresso
 
     implementation project(":data")
     implementation project(":domain")

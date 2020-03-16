@@ -2,10 +2,11 @@ apply plugin: 'kotlin'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+    //kotlin
+    implementation Dependencies.kotlinLib
 
-    //testing
+    //test
     //mockK
     testImplementation Dependencies.mockK
     testImplementation Dependencies.mockKAndroid

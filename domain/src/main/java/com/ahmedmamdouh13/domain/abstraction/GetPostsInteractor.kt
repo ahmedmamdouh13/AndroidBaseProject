@@ -1,8 +1,9 @@
 package com.ahmedmamdouh13.domain.abstraction
 
-import com.ahmedmamdouh13.domain.PostDomain
+import com.ahmedmamdouh13.domain.Result
+import com.ahmedmamdouh13.domain.model.PostDomain
 
 interface GetPostsInteractor {
-   suspend fun getNetworkPosts(): List<PostDomain>?
+   suspend fun getNetworkPosts(): Result
 
 }
